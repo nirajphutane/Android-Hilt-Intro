@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_graph"
+    app:startDestination="@id/crypto">
+
+    <fragment
+        android:id="@+id/crypto"
+        android:name="com.np.hilttutorial.features.crypto.fragments.CryptoFragment"
+        android:label="Crypto Adapter Fragment"
+        tools:layout="@layout/fragment_crypto">
+
+        <action
+            android:id="@+id/cryptoAdapter"
+            app:destination="@+id/cryptoAdapter" />
+        <action
+            android:id="@+id/bitcoin"
+            app:destination="@+id/bitcoin" />
+        <action
+            android:id="@+id/ethereum"
+            app:destination="@+id/ethereum" />
+        <action
+            android:id="@+id/coinbase"
+            app:destination="@+id/coinbase" />
+        <action
+            android:id="@+id/gemini"
+            app:destination="@+id/gemini" />
+        <action
+            android:id="@+id/buyCrypto"
+            app:destination="@+id/buyCrypto" />
+        <action
+            android:id="@+id/sellCrypto"
+            app:destination="@+id/sellCrypto" />
+        <action
+            android:id="@+id/cryptoServicePortal"
+            app:destination="@+id/cryptoServicePortal" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cryptoAdapter"
+        android:name="com.np.hilttutorial.features.crypto.fragments.adapter.CryptoAdapterFragment"
+        android:label="Crypto Adapter Fragment"
+        tools:layout="@layout/fragment_cryptoadapter">
+
+        <action
+            android:id="@+id/back"
+            app:destination="@+id/crypto" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/crypto_adaptor"
+        android:name="com.np.hilttutorial.features.crypto.fragments.service.CryptoServiceFragment"
+        android:label="Crypto Service Fragment"
+        tools:layout="@layout/fragment_cryptoservice">
+
+        <action
+            android:id="@+id/back"
+            app:destination="@+id/cryptoAdapter" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bitcoin"
+        android:name="com.np.hilttutorial.features.crypto.fragments.bitcoin.BitcoinFragment"
+        android:label="Bitcoin Fragment"
+        tools:layout="@layout/fragment_bitcoin">
+
+        <action
+            android:id="@+id/back"
+            app:destination="@+id/crypto" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ethereum"
+        android:name="com.np.hilttutorial.features.crypto.fragments.ethereum.EthereumFragment"
+        android:label="Ethereum Fragment"
+        tools:layout="@layout/fragment_ethereum">
+
+        <action
+            android:id="@+id/back"
+            app:destination="@+id/crypto" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gemini"
+        android:name="com.np.hilttutorial.features.crypto.fragments.gemini.GeminiFragment"
+        android:label="Gemini Fragment"
+        tools:layout="@layout/fragment_gemini">
+
+        <action
+            android:id="@+id/back"
+            app:destination="@+id/crypto" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/coinbase"
+        android:name="com.np.hilttutorial.features.crypto.fragments.coinbase.CoinbaseFragment"
+        android:label="Coinbase Fragment"
+        tools:layout="@layout/fragment_coinbase">
+
+        <action
+            android:id="@+id/back"
+            app:destination="@+id/crypto" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/buyCrypto"
+        android:name="com.np.hilttutorial.features.crypto.fragments.buyAndSellCrypto.buy.BuyCryptoFragment"
+        android:label="Buy Crypto Fragment"
+        tools:layout="@layout/fragment_buycrypto">
+
+        <action
+            android:id="@+id/back"
+            app:destination="@+id/crypto" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sellCrypto"
+        android:name="com.np.hilttutorial.features.crypto.fragments.buyAndSellCrypto.sell.SellCryptoFragment"
+        android:label="Sell Crypto Fragment"
+        tools:layout="@layout/fragment_sellcrypto">
+
+        <action
+            android:id="@+id/back"
+            app:destination="@+id/crypto" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cryptoServicePortal"
+        android:name="com.np.hilttutorial.features.crypto.fragments.cryptoServicePortal.CryptoServicePortalFragment"
+        android:label="Crypto Service Portal Fragment"
+        tools:layout="@layout/fragment_cryptoserviceportal">
+
+        <action
+            android:id="@+id/back"
+            app:destination="@+id/crypto" />
+    </fragment>
+
+</navigation>
