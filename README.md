@@ -16,8 +16,6 @@ https://dagger.dev/hilt/
 
 https://stackoverflow.com/questions/62691794/how-to-pass-arguments-to-hilt-module
 
-https://dagger.dev/hilt/monolithic.html
-
 ---
 
 #### Assisted Injection
